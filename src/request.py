@@ -41,7 +41,8 @@ class PutMetricRequest:
             'Value': self.metric_value,
             'Dimensions': self.dimension,
             'Unit': self.unit,
-            'Timestamp': self.timestamp
+            'Timestamp': self.timestamp,
+            'StorageResolution': 1
         }
 
     def validate_metric(self, metric):
